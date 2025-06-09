@@ -117,16 +117,42 @@
 # lista_geral.clear()
 # print(lista_geral)
 
-lista = ["p","y","t","h","o","n"]
+# lista = ["p","y","t","h","o","n"]
 # lista.pop()
 # print(lista)
 
 # lista_2 = ["p","y","t","h","o","n"]
-lista_2 = lista[::-1].copy()
-lista_2.pop()
-lista.pop()
+# lista_2 = lista[::-1].copy()
+# lista_2.pop()
+# lista.pop()
 
-print(lista_2)
-print(lista)
+# print(lista_2)
+# print(lista)
+# LISTAS:
+# sort(), extend(list), index(elemento), pop(), append(novo_elemento), count(elemento), remove(elemento), copy(), len(list), type(list)
+# reverse(), insert(), clear()
+frutas = ["laranja", "uva", "mamão", "laranja", "pera", "maça"]
+print(frutas.count("laranja"))
+print("Frutas:", frutas)
+padaria = ["pão", "leite", "manteiga", "café"]
+print("Padaria:",padaria)
+frutas.extend(padaria)
+print("Fruta com Padaria",frutas)
+print("***********")
 
+frutas.sort()
+print("Sort")
+print(frutas)
+frutas.append("bolacha")
+print(frutas.index("manteiga"))
+print(frutas)
+print(frutas.remove("pera"))
+print(frutas)
+print(len(frutas))
 
+print("***********")
+for fruta in frutas:
+  print(fruta)
+
+print("***********")
+[print(x) for x in frutas]
